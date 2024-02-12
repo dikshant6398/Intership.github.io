@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(187, 187, 187);
+}
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+.hero-section {
+    height: 730px;
+    display: flex;
+    background: linear-gradient(90deg,#dcb0de,#87e7e2);
+   
+}
+
+.hero-content {
+    max-width: 500px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+h2{
+    display: flex;
+}
+h2 span{
+    padding-top: 20px;
+    padding-left: 5px;
+}
+#icon-img{
+    height: 70px;
+    width: 70px;
+    mix-blend-mode: darken;
+}
+#chkli-img{
+    margin-left: 300px;
+    margin-top: 100px;
+    height: 500px;
+    width: 500px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.start-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #e65200;
+}
+/*founders section */
+
+.founder-section{
+    height: 730px;
+    background-color: rgb(252, 213, 219);
+}
+.founder-section h1{
+    text-align: center;
+    padding: 30px;
+    background-color:  rgb(248, 220, 224);
+}
+.foun-sec{
+    display: flex;
+}
+.foun-sec img{
+    margin-left: 35px;
+    height: 500px;
+    width: 500px;
+    margin-top: 20px;
+}
+.found-content{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 12px;
+
+}
+.borderCont{
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    border-spacing:5px;
+    background-color: rgb(248, 220, 224);
+}
+/*  Why should You go ahead with Me?*/
+
+.why-choose {
+    text-align: center;
+    height: 725px;
+    background-color: rgb(187, 187, 187);
+   
+}
+.why-choose h1{
+    padding-top: 50px;
+    text-align: center;
+}
+#icon-image{
+    height: 70px;
+    width: 70px;
+    mix-blend-mode: darken;
+   
+}
+.features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:100px;
+    align-items: center;
+    justify-self: center;
+    
+    
+}
+.features1{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 30px;
+  
+}
+
+#feature1{
+    margin-left: 250px;
+    margin-top: 30px;
+}
+.icons{
+    padding-left: 6px;
+}
+
+/*  countdown timer  */
+.countdown-section{
+    align-items: center;
+    text-align: center;
+    height: 625px;
+    background: linear-gradient(90deg,#d8a2db,#8ecbc8);
+    
+}
+.countdown-section h1{
+    text-align: center;
+    padding-top: 80px;
+}
+.order-btn{
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #dc661d;
+    color: black;
+    border-color: transparent;
+    border-radius:5px ;
+    cursor: pointer;
+}
+
+/* Sign Login */
+
+.sign-in{
+    height: 625px;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    background-color: rgb(187, 187, 187);
+    flex-direction: row ;
+}   
+.sign-in1{
+    display: flex;
+    flex-direction: row ;
+    margin-right: 100px;
+
+}
+.head-in1{
+    margin-right: 300px;
+}
+.head-in1 p{
+    font-size: 4vh;
+    margin-right: 100px;
+}
+.head-in{
+    font-size: 5vh; 
+}
+.head-in h2{
+    margin-right: 200px;
+}
+.line{
+    border: 2px solid black;
+    width: 200px;
+    margin: 2px;
+}
+.head-in1 button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #dc661d;
+    color: black;
+    border-color: transparent;
+    border-radius:5px ;
+    cursor: pointer;
+    margin: 5px;
+}
+.border-line{
+    border: 2px solid black;
+}
+
+
+/* for login section */
+
+.login-section {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.login-form {
+    display: grid;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 100px;
+}
+
+/* pop up form */
+
+#top {
+    opacity: 0; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 20%;  
+    height: 20%; 
+    background-color: rgb(172, 140, 145); 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+    flex-direction: column;
+    background-color: rgb(204, 204, 226);
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+
+}
+#top h2{
+    margin-bottom: 20px;
+}
+
+#list {
+    list-style-type: none;
+}
+
+#button {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    padding: 7px;
+    background: linear-gradient(90deg, #d881df, #60d8d2);
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+/*  responsive */
+@media screen and (max-width: 500px) {
+
+    .hero-section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        max-width: none;
+        margin: 20px;
+    }
+
+    h2 {
+        margin-top: 20px; 
+    }
+
+    #chkli-img {
+        display: none;
+    }
+
+    .founder-section {
+        height: auto;
+       
+    }
+    .foun-sec img {
+        
+        width: 0;
+        height: 0;
+    }
+    .found-content {
+        margin: 20px;
+        
+    }
+
+    .borderCont {
+        margin: 10px;
+    }
+
+    .countdown-section{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .why-choose {
+        height: auto;
+    }
+
+    .features {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+    }
+
+    .features1 {
+        margin: 20px;
+    }
+
+    #feature1 {
+        margin-left: 0;
+    }
+
+
+    .countdown-section {
+        height: auto;
+        width: 100%;
+    }
+
+    .sign-in {
+        height: auto;
+        flex-direction: column;
+    }
+
+    
+    .head-in1 {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .head-in1 p{
+       padding-left:10px ;
+    }
+    .head-in  {
+        display: none;
+    }
+
+
+    .login-form {
+        height: auto;
+    }
+
+    #top {
+        height: auto;
+        width: 80%;
+        padding: 20px;
+    }
+
+    #top h2 {
+        margin-bottom: 10px;
+    }
+
+}
